@@ -2,32 +2,40 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-//function to get my api and catch errors, gonna export default so i dont forget
+import JediCard from './JediCard.js'
 
-export default function starWarsAPIGet(){
-    const [dataAPI, setDataAPI] = useState([]);
+//function to get my api and catch errors, gonna export default so i dont forget
+export default function SwapiFetch() {
+    const [swapiData, setSwapiData] = useState([]);
 
     useEffect(() => {
         axios
-            .get('https://swapi.com/api/people/')
+            .get('https://swapi.co/api/people/')
             .then((response) => {
-                const characterAbout = response.data.results
-                setDataAPI(profiles)
+
+                const profiles = response.data.results
+                setSwapiData(profiles)
             })
             .catch(error => {
-                console.log('There was a problem gettin the data, yo : ', error)
-            })
-    },[])
+                console.log('There was an error getting the data from the API : ', error)
+            }) 
+    }, [])
 
-    console.log(dataAPI);
+    console.log(swapiData)
 
-    return (
-        <div className = 'characterAboutDiv'>
-                {dataAPI.map((item, index) => {
-                    return(
-                        <JediCard
-                            name={item.name}
+
+//return this data I am mapping over
+    
+    return ( 
+        <div className="jediCase">
+            {swapiData
+                .map((item, index)=> {
+                    return (
+                        <JediCard 
+                            name={item.name} 
+                            gender={item.gender}
                             eye_color={item.eye_color}
+                            home_world={item.hair_color}
                             key={index}
                         />
                     )
@@ -36,4 +44,3 @@ export default function starWarsAPIGet(){
         </div>
     )
 }
-
