@@ -29,11 +29,6 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
     1.    React JS is a javascript library basically for making components for the user interface. 
 
 
-
-
-
-
-
 - [ ] What does it mean to _think_ in react?
 
 
@@ -41,7 +36,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
      2.   Basically you have to understand that what you are doing is putting code into these boxes called components, and this code is reusable.      
 
 - [ ] Describe state.
-        State is the place where the data comes from. We can use setState() to basically schedule an updtate to a component's state object. When the state changes (data changes) the component will re-render.
+        State is the place where the data comes from. We can use setState() to basically schedule an update to a component's state object. When the state changes (data changes) the component will re-render.
 
 - [ ] Describe props.
         Props get passed to the component. I think of it sort of like DNA being passed down a generation, because its just data being passed on. 

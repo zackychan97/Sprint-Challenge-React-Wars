@@ -17,14 +17,14 @@
      background:rgba(0,0,0,0.7);
 
 /* The code below blurred out all my displayed data, not just the background. found it on stack overflow. so the code right above is what tinted background black */
-     /*
+/*      
     filter:blur(4px);
     -o-filter:blur(4px);
     -ms-filter:blur(4px);
     -moz-filter:blur(4px);
-    -webkit-filter:blur(4px);
+    -webkit-filter:blur(4px); */
 
-     */
+    
 
 }
 
