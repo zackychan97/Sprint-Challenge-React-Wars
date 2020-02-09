@@ -6,3 +6,33 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.jediProfile {
+  box-sizing: border-box;
+  padding: 5px;
+
+  color: rgb(48, 245, 9);
+  width: 30%;
+  margin: 15px;
+  /* background:black; */
+     background:rgba(0,0,0,0.7);
+
+/* The code below blurred out all my displayed data, not just the background. found it on stack overflow. so the code right above is what tinted background black */
+/*      
+    filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px); */
+
+    
+
+}
+
+.jediCase {
+
+  display: flex;
+  flex-direction: col;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
